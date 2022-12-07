@@ -245,9 +245,9 @@ class JiraSecurityIssue
             $commentText .= "\n\n" . \sprintf(self::NOT_FOUND_WATCHERS_TEXT, $this->formatQuoted($notFoundWatchers));
         }
 
-        $comment = $this->createComment($commentText);
+        //$comment = $this->createComment($commentText);
 
-        $this->issueService->addComment($ret->key, $comment);
+        //$this->issueService->addComment($ret->key, $comment);
 
         return $ret->key;
     }
